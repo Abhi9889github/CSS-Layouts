@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Body takes up the full screen height */
+        body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Container holds the boxes and allows horizontal scroll */
+        .scroll-container {
+            display: flex;           /* Align items horizontally */
+            gap: 20px;               /* Space between the boxes */
+            padding: 20px;           /* Optional padding around the scrollable area */
+            height: 200px;    
+            justify-content: space-between;        /* Ensure the height is fully used */
+        }
+
+        /* Style for the individual boxes */
+        .box {
+            height: 50px;
+            min-width: 50px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+        @media screen and (width>1200px){
+
+        }
+        @media screen and (width<1200px){
+            .scroll-container{
+
+                flex-direction: column-reverse;
+                margin-top: 12px;
+                height: auto;
+                .box{
+                    width: 50px;
+                }
+            }
+
+        }
+
+        
+        </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="box">
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
